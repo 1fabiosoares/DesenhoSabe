@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Desenho Sabe Definitive Edition</string>
+    <string name="current">Corrente eletrica</string>
+    <string name="equivalentResistance">Resistência equivalente</string>
+    <string name="jouleEffect">Efeito Joule</string>
+    <string name="jouleEffectDescription">Transformação em energia termica</string>
+    <string name="ohmLaw">Lei de Ohm</string>
+    <string name="power">Potência eletrica</string>
+    <string name="resistance">Resistência Eletrica</string>
+    <string name="resistors2">Até 2 resistores paralelos</string>
+    <string name="resistors3">Até 3 resistores paralelos</string>
+    <string name="tension">Tensão Eletrica</string>
+    <string name="calculate">Calcular</string>
+</resources>

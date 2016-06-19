@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Desenho Sabe Definitive Edition</string>
+
+    <!-- Title -->
+    <string name="ohmLaw">Ohms Law</string>
+    <string name="equivalentResistance">Equivalent Resistance</string>
+    <string name="jouleEffect">Joule Effect</string>
+    <!-- Descriptions -->
+    <string name="resistors2">Up to 2 parallel resistors</string>
+    <string name="resistors3">Up to 3 parallel resistors</string>
+    <string name="tension">Electric tension</string>
+    <string name="current">Electric current</string>
+    <string name="resistance">Electrical resistance</string>
+    <string name="power">Electric power</string>
+    <string name="jouleEffectDescription">Transformation into thermal energy</string>
+
+    <!-- Resources -->
+    <string name="calculate">Calculate</string>
+
 </resources>
