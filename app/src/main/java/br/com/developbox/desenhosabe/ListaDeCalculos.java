@@ -32,7 +32,8 @@ public class ListaDeCalculos extends AppCompatActivity {
                 getString(R.string.ohmLaw),
                 getString(R.string.ohmLaw),
                 getString(R.string.ohmLaw),
-                getString(R.string.ohmLaw)
+                getString(R.string.ohmLaw),
+                getString(R.string.jouleEffect)
         };
         descricao = new String[]{
                 getString(R.string.resistors2),

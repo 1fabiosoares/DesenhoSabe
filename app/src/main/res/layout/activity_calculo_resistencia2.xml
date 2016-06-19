@@ -13,8 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Re = (R1*R2)/R1+R2"
-        android:id="@+id/textView"
+        android:id="@+id/resi2ResultTextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
@@ -23,10 +22,10 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:id="@+id/editText"
+        android:id="@+id/resi2R1EditText"
         android:layout_marginTop="31dp"
         android:hint="R1"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/resi2ResultTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -36,22 +35,31 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:id="@+id/editText2"
+        android:id="@+id/resi2R2EditText"
         android:hint="R2"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/resi2R1EditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignRight="@+id/resi2R1EditText"
+        android:layout_alignEnd="@+id/resi2R1EditText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
-        android:id="@+id/button"
+        android:id="@+id/resi2CalculateButton"
         style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_below="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_below="@+id/resi2R2EditText"
+        android:layout_alignRight="@+id/resi2R2EditText"
+        android:layout_alignEnd="@+id/resi2R2EditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Re = (R1*R2)/(R1+R2)"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
