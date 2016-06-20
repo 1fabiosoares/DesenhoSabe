@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculoResistencia2"></activity>
+        <activity android:name=".CalculoResistencia2" />
+        <activity android:name=".CalculoResistencia3"></activity>
     </application>
 
 </manifest>

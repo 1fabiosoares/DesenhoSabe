@@ -12,4 +12,5 @@
     <string name="resistors3">Até 3 resistores paralelos</string>
     <string name="tension">Tensão Eletrica</string>
     <string name="calculate">Calcular</string>
+    <string name="share">Compartilhar</string>
 </resources>

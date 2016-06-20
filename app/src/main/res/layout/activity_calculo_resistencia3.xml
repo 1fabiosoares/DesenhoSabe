@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.developbox.desenhosabe.CalculoResistencia2">
+    tools:context="br.com.developbox.desenhosabe.CalculoResistencia3">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/resi2ResultTextView"
+        android:id="@+id/resi3ResultTextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
@@ -22,10 +22,10 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:id="@+id/resi2R1EditText"
+        android:id="@+id/resi3R1EditText"
         android:layout_marginTop="31dp"
         android:hint="R1"
-        android:layout_below="@+id/resi2ResultTextView"
+        android:layout_below="@+id/resi3ResultTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -35,32 +35,45 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:id="@+id/resi2R2EditText"
+        android:id="@+id/resi3R2EditText"
         android:hint="R2"
-        android:layout_below="@+id/resi2R1EditText"
+        android:layout_below="@+id/resi3R1EditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/resi2R1EditText"
-        android:layout_alignEnd="@+id/resi2R1EditText" />
+        android:layout_alignRight="@+id/resi3R1EditText"
+        android:layout_alignEnd="@+id/resi3R1EditText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
-        android:id="@+id/resi2CalculateButton"
+        android:id="@+id/resi3CalculateButton"
         style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_below="@+id/resi2R2EditText"
-        android:layout_alignRight="@+id/resi2R2EditText"
-        android:layout_alignEnd="@+id/resi2R2EditText" />
+        android:layout_below="@+id/resi3R2EditText"
+        android:layout_alignRight="@+id/resi3R2EditText"
+        android:layout_alignEnd="@+id/resi3R2EditText"
+        android:layout_marginTop="54dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Re = (R1*R2)/(R1+R2)"
-        android:id="@+id/resi2FormulatextView"
-        android:layout_below="@+id/resi2CalculateButton"
+        android:text="1/Re = (1/R1) + (1/R2) + (1/R3)"
+        android:id="@+id/resi3FormulatextView"
+        android:layout_below="@+id/resi3CalculateButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/resi3R3EditText"
+        android:hint="R3"
+        android:layout_below="@+id/resi3R2EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/resi3R2EditText"
+        android:layout_alignEnd="@+id/resi3R2EditText" />
 
 </RelativeLayout>

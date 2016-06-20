@@ -1,8 +1,10 @@
 package br.com.developbox.desenhosabe;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -68,19 +70,19 @@ public class ListaDeCalculos extends AppCompatActivity {
                     case 0:
                         it = new Intent(getBaseContext(), CalculoResistencia2.class);
                         break;
-                    case 2:
-                        // @TODO Calculo 3 Resistencia
+                    case 1:
+                        it = new Intent(getBaseContext(), CalculoResistencia3.class);
                         break;
-                    case 3:
+                    case 2:
                         // @TODO Calculo Lei de Ohm Tensão
                         break;
-                    case 4:
+                    case 3:
                         // @TODO Calculo Lei de Ohm Resistencia
                         break;
-                    case 5:
+                    case 4:
                         // @TODO Calculo Lei de Ohm Potencia
                         break;
-                    case 6:
+                    case 5:
                         // @TODO Calculo Joule
                         break;
                 }
@@ -91,5 +93,21 @@ public class ListaDeCalculos extends AppCompatActivity {
                 }
             }
         });
+    }
+    public static Intent shareResult(String formula,String[] variables, String[] values, String result){
+        String text = formula+"\n";
+        for (int i = 0; i < variables.length; i++){
+            try{
+                text += variables[i]+"="+values[i]+"\n";
+            }catch(ArrayIndexOutOfBoundsException e){
+                Log.e("SHARING", e.getMessage());
+            }
+        }
+        text += "\n"+result;
+        Intent it = new Intent(Intent.ACTION_SEND);
+        it.putExtra(Intent.EXTRA_TEXT, text);
+        it.setType("text/plain");
+
+        return it;
     }
 }
