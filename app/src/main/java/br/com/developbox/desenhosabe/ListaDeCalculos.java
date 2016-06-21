@@ -85,7 +85,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                         // @TODO Potencia geral 1
                         break;
                     case 6:
-                        // @TODO Calculo Joule
+                        it = new Intent(getBaseContext(), CalculoEfeitoJoule.class);
                         break;
                 }
                 if(it != null){

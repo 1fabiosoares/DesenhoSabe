@@ -19,7 +19,8 @@
         <activity android:name=".CalculoResistencia3" />
         <activity android:name=".CalculoOhmTensao" />
         <activity android:name=".CalculoOhmCorrente" />
-        <activity android:name=".CalculoOhmResistencia"></activity>
+        <activity android:name=".CalculoOhmResistencia" />
+        <activity android:name=".CalculoEfeitoJoule"></activity>
     </application>
 
 </manifest>
