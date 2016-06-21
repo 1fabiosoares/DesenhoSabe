@@ -79,7 +79,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                         it = new Intent(getBaseContext(), CalculoOhmCorrente.class);
                         break;
                     case 4:
-                        // @TODO Calculo Lei de Ohm Resistencia
+                        it = new Intent(getBaseContext(), CalculoOhmResistencia.class);
                         break;
                     case 5:
                         // @TODO Potencia geral 1

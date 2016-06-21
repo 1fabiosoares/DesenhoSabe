@@ -18,7 +18,8 @@
         <activity android:name=".CalculoResistencia2" />
         <activity android:name=".CalculoResistencia3" />
         <activity android:name=".CalculoOhmTensao" />
-        <activity android:name=".CalculoOhmCorrente"></activity>
+        <activity android:name=".CalculoOhmCorrente" />
+        <activity android:name=".CalculoOhmResistencia"></activity>
     </application>
 
 </manifest>
