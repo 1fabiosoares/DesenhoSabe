@@ -1,15 +1,14 @@
 package br.com.developbox.desenhosabe;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -74,7 +73,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                         it = new Intent(getBaseContext(), CalculoResistencia3.class);
                         break;
                     case 2:
-                        // @TODO Calculo Lei de Ohm Tensão
+                        it = new Intent(getBaseContext(), CalculoOhmTensao.class);
                         break;
                     case 3:
                         // @TODO Calculo Lei de Ohm Current
@@ -92,6 +91,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                 if(it != null){
                     startActivity(it);
                 }else{
+
                     Toast.makeText(ListaDeCalculos.this, calculo[i]+" "+descricao[i]+" vai ser implantado no futudo. ;)", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -112,5 +112,13 @@ public class ListaDeCalculos extends AppCompatActivity {
         it.setType("text/plain");
 
         return it;
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+
+        getSupportActionBar().setSubtitle(getString(R.string.app_submane));
+        getSupportActionBar().setShowHideAnimationEnabled(true);
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

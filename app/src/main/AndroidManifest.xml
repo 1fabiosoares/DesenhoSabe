@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalculoResistencia2" />
-        <activity android:name=".CalculoResistencia3"></activity>
+        <activity android:name=".CalculoResistencia3" />
+        <activity android:name=".CalculoOhmTensao"></activity>
     </application>
 
 </manifest>

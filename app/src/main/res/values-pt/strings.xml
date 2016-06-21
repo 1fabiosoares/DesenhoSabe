@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Desenho Sabe Definitive Edition</string>
+    <string name="app_name">Desenho Sabe</string>
     <string name="current">Corrente eletrica</string>
     <string name="equivalentResistance">Resistência equivalente</string>
     <string name="jouleEffect">Efeito Joule</string>
@@ -13,4 +13,5 @@
     <string name="tension">Tensão Eletrica</string>
     <string name="calculate">Calcular</string>
     <string name="share">Compartilhar</string>
+    <string name="app_submane">Definitive Edition</string>
 </resources>
