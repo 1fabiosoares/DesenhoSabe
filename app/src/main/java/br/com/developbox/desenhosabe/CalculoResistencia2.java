@@ -20,6 +20,7 @@ public class CalculoResistencia2 extends AppCompatActivity {
 
     Button resi2CalculateButton;
 
+    double r1 = 0, r2 = 0;
     String result;
 
     @Override
@@ -36,8 +37,8 @@ public class CalculoResistencia2 extends AppCompatActivity {
         resi2CalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double r1 = Double.parseDouble(resi2R1EditText.getText().toString());
-                double r2 = Double.parseDouble(resi2R2EditText.getText().toString());
+                r1 = Double.parseDouble(resi2R1EditText.getText().toString());
+                r2 = Double.parseDouble(resi2R2EditText.getText().toString());
 
                 result = String.format("%.3f Ω", calculate(r1, r2));
 
@@ -69,7 +70,7 @@ public class CalculoResistencia2 extends AppCompatActivity {
                 startActivity(ListaDeCalculos.shareResult(
                         resi2FormulatextView.getText().toString(),
                         new String[]{"R1", "R2"},
-                        new String[]{resi2R1EditText.getText().toString(), resi2R2EditText.getText().toString()},
+                        new String[]{String.format("%.2f Ω", r1), String.format("%.2f Ω", r2)},
                         result)
                 );
                 return true;

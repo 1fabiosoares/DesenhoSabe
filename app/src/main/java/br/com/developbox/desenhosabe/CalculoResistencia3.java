@@ -20,7 +20,7 @@ public class CalculoResistencia3 extends AppCompatActivity {
     EditText resi3R3EditView;
 
     Button resi3CalculateButton;
-
+    double r1, r2, r3;
     String result;
 
     @Override
@@ -40,9 +40,9 @@ public class CalculoResistencia3 extends AppCompatActivity {
         resi3CalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double r1 = Double.parseDouble(resi3R1EditView.getText().toString());
-                double r2 = Double.parseDouble(resi3R2EditView.getText().toString());
-                double r3 = Double.parseDouble(resi3R3EditView.getText().toString());
+                r1 = Double.parseDouble(resi3R1EditView.getText().toString());
+                r2 = Double.parseDouble(resi3R2EditView.getText().toString());
+                r3 = Double.parseDouble(resi3R3EditView.getText().toString());
 
                 result = String.format("%.3f Ω", calculate(r1, r2, r3));
 
@@ -72,8 +72,8 @@ public class CalculoResistencia3 extends AppCompatActivity {
             case R.id.shareButton:
                 startActivity(ListaDeCalculos.shareResult(
                         resi3FormulaTextView.getText().toString(),
-                        new String[]{"R1", "R2", "R3", "1/Re"},
-                        new String[]{resi3R1EditView.getText().toString(), resi3R2EditView.getText().toString(), resi3R3EditView.getText().toString(), result},
+                        new String[]{"R1", "R2", "R3"},
+                        new String[]{String.format("%.2f Ω", r1), String.format("%.2f Ω", r2),  String.format("%.2f Ω", r3)},
                         result
                 ));
         }

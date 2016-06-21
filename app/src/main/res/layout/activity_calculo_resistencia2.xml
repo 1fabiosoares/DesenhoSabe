@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:id="@+id/resi2R1EditText"
         android:layout_marginTop="31dp"
         android:hint="R1"
@@ -34,7 +34,7 @@
     <EditText
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:id="@+id/resi2R2EditText"
         android:hint="R2"
         android:layout_below="@+id/resi2R1EditText"

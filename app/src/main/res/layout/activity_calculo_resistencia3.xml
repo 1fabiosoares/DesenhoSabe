@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:id="@+id/resi3R1EditText"
         android:layout_marginTop="31dp"
         android:hint="R1"
@@ -34,7 +34,7 @@
     <EditText
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:id="@+id/resi3R2EditText"
         android:hint="R2"
         android:layout_below="@+id/resi3R1EditText"
@@ -42,6 +42,18 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/resi3R1EditText"
         android:layout_alignEnd="@+id/resi3R1EditText" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/resi3R3EditText"
+        android:hint="R3"
+        android:layout_below="@+id/resi3R2EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/resi3R2EditText"
+        android:layout_alignEnd="@+id/resi3R2EditText" />
 
     <Button
         android:layout_width="wrap_content"
@@ -63,17 +75,5 @@
         android:layout_below="@+id/resi3CalculateButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
-
-    <EditText
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:id="@+id/resi3R3EditText"
-        android:hint="R3"
-        android:layout_below="@+id/resi3R2EditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/resi3R2EditText"
-        android:layout_alignEnd="@+id/resi3R2EditText" />
 
 </RelativeLayout>

@@ -77,12 +77,15 @@ public class ListaDeCalculos extends AppCompatActivity {
                         // @TODO Calculo Lei de Ohm Tensão
                         break;
                     case 3:
-                        // @TODO Calculo Lei de Ohm Resistencia
+                        // @TODO Calculo Lei de Ohm Current
                         break;
                     case 4:
-                        // @TODO Calculo Lei de Ohm Potencia
+                        // @TODO Calculo Lei de Ohm Resistencia
                         break;
                     case 5:
+                        // @TODO Potencia geral 1
+                        break;
+                    case 6:
                         // @TODO Calculo Joule
                         break;
                 }
