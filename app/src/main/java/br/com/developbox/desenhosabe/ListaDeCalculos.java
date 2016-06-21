@@ -76,7 +76,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                         it = new Intent(getBaseContext(), CalculoOhmTensao.class);
                         break;
                     case 3:
-                        // @TODO Calculo Lei de Ohm Current
+                        it = new Intent(getBaseContext(), CalculoOhmCorrente.class);
                         break;
                     case 4:
                         // @TODO Calculo Lei de Ohm Resistencia
