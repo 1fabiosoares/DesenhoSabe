@@ -14,4 +14,9 @@
     <string name="calculate">Calcular</string>
     <string name="share">Compartilhar</string>
     <string name="app_submane">Definitive Edition</string>
+    <string name="info">Informações</string>
+    <string name="download">Baixar</string>
+    <string name="see_more">Ver Atualizações</string>
+    <string name="bug_repport">Reportar Bug</string>
+    <string name="bug_text">O bug foi </string>
 </resources>

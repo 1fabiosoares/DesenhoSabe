@@ -1,10 +1,12 @@
 package br.com.developbox.desenhosabe;
 
 import android.content.Intent;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -115,10 +117,23 @@ public class ListaDeCalculos extends AppCompatActivity {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.lista_de_calculos_menu, menu);
 
         getSupportActionBar().setSubtitle(getString(R.string.app_submane));
         getSupportActionBar().setShowHideAnimationEnabled(true);
 
+        MenuItemCompat.setShowAsAction(menu.findItem(R.id.infoBarButton), MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
         return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.infoBarButton:
+                startActivity(new Intent(getBaseContext(), Info.class));
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

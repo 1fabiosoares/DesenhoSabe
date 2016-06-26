@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Desenho Sabe</string>
     <string name="app_submane">Definitive Edition</string>
+    <string name="app_version" translatable="false">v0.2-alpha</string>
 
     <!-- Title -->
     <string name="ohmLaw">Ohms Law</string>
@@ -18,5 +19,12 @@
     <!-- Resources -->
     <string name="calculate">Calculate</string>,
     <string name="share">Share</string>
+
+    <!-- Informations -->
+    <string name="info">Info</string>
+    <string name="download">Download</string>
+    <string name="see_more">See more</string>
+    <string name="bug_repport">Bug Report</string>
+    <string name="bug_text">The bug was </string>
 
 </resources>
