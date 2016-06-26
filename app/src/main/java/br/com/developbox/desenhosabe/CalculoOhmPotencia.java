@@ -10,43 +10,39 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class CalculoOhmCorrente extends AppCompatActivity {
-
-    TextView ohmCurResultTextView;
-    EditText ohmCurVEditText;
-    EditText ohmCurREditText;
-    Button ohmCurCalculateButton;
-    TextView ohmCurFormulatextView;
+public class CalculoOhmPotencia extends AppCompatActivity {
+    TextView ohmPotResultTextView;
+    EditText ohmPotVEditText;
+    EditText ohmPotREditText;
+    Button ohmPotCalculateButton;
+    TextView ohmPotFormulatextView;
 
     double v, r;
     String result;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculo_ohm_corrente);
+        setContentView(R.layout.activity_calculo_ohm_potencia);
 
-        ohmCurResultTextView = (TextView) findViewById(R.id.ohmCurResultTextView);
-        ohmCurFormulatextView = (TextView) findViewById(R.id.ohmCurFormulatextView);
+        ohmPotResultTextView = (TextView) findViewById(R.id.ohmPotResultTextView);
+        ohmPotFormulatextView = (TextView) findViewById(R.id.ohmPotFormulatextView);
 
-        ohmCurVEditText = (EditText) findViewById(R.id.ohmCurVEditText);
-        ohmCurREditText = (EditText) findViewById(R.id.ohmCurREditText);
+        ohmPotVEditText = (EditText) findViewById(R.id.ohmPotVEditText);
+        ohmPotREditText = (EditText) findViewById(R.id.ohmPotREditText);
 
-        ohmCurCalculateButton = (Button) findViewById(R.id.ohmCurCalculateButton);
-
-        ohmCurCalculateButton.setOnClickListener(new View.OnClickListener() {
+        ohmPotCalculateButton = (Button) findViewById(R.id.ohmPotCalculateButton);
+        ohmPotCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                v = Double.parseDouble(ohmCurVEditText.getText().toString());
-                r = Double.parseDouble(ohmCurREditText.getText().toString());
+                v = Double.parseDouble(ohmPotVEditText.getText().toString());
+                r = Double.parseDouble(ohmPotREditText.getText().toString());
 
-                result = String.format("%.3f A", calculate(v, r));
+                result = String.format("%.3f W", calculate(v, r));
 
-                ohmCurResultTextView.setText(result);
+                ohmPotResultTextView.setText(result);
             }
         });
-
     }
 
     @Override
@@ -55,7 +51,7 @@ public class CalculoOhmCorrente extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(getString(R.string.ohmLaw));
-        getSupportActionBar().setSubtitle(getString(R.string.current));
+        getSupportActionBar().setSubtitle(getString(R.string.power));
 
         MenuItemCompat.setShowAsAction(menu.findItem(R.id.shareButton), MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
@@ -69,7 +65,7 @@ public class CalculoOhmCorrente extends AppCompatActivity {
                 return true;
             case R.id.shareButton:
                 startActivity(ListaDeCalculos.shareResult(
-                        ohmCurFormulatextView.getText().toString(),
+                        ohmPotFormulatextView.getText().toString(),
                         new String[] {"V", "R"},
                         new String[] {String.format("%.2f V", v), String.format("%.2f Ω", r)},
                         result
@@ -80,6 +76,6 @@ public class CalculoOhmCorrente extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public double calculate(double v, double r){
-        return v/r;
+        return (v*v)/r;
     }
 }

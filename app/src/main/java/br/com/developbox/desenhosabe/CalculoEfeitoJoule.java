@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class CalculoEfeitoJoule extends AppCompatActivity {
+public class CalculoEfeitoJoule extends AppCompatActivity{
     TextView efeitoJouleResultTextView;
     EditText efeitoJouleREditText;
     EditText efeitoJouleiEditText;
@@ -45,7 +45,6 @@ public class CalculoEfeitoJoule extends AppCompatActivity {
             }
         });
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.calculo_resistencia_2_menu, menu);

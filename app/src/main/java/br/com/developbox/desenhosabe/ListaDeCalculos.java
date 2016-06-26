@@ -82,7 +82,7 @@ public class ListaDeCalculos extends AppCompatActivity {
                         it = new Intent(getBaseContext(), CalculoOhmResistencia.class);
                         break;
                     case 5:
-                        // @TODO Potencia geral 1
+                        it = new Intent(getBaseContext(), CalculoOhmPotencia.class);
                         break;
                     case 6:
                         it = new Intent(getBaseContext(), CalculoEfeitoJoule.class);
